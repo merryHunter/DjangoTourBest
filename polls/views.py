@@ -7,48 +7,18 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
 from django.views import generic
 
-from models import Question, Choice
 from polls.forms import UserForm
 from polls.forms import UserProfileForm
 
 
 class IndexView(generic.ListView):
-    template_name = 'polls/index.html'
+    template_name = 'tourbest/index.html'
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
         """Return the last five published questions."""
-        return Question.objects.order_by('-pub_date')[:5]
 
-
-class DetailView(generic.DetailView):
-    model = Question
-    template_name = 'polls/detail.html'
-
-
-class ResultsView(generic.DetailView):
-    model = Question
-    template_name = 'polls/results.html'
-
-
-def vote(request, question_id):
-    question = get_object_or_404(Question, pk=question_id)
-    try:
-        selected_choice = question.choice_set.get(pk=request.POST['choice'])
-    except (KeyError, Choice.DoesNotExist):
-        # Redisplay the question voting form.
-        return render(request, 'polls/detail.html', {
-            'question': question,
-            'error_message': "You didn't select a choice.",
-        })
-    else:
-        selected_choice.votes += 1
-        selected_choice.save()
-        # Always return an HttpResponseRedirect after successfully dealing
-        # with POST data. This prevents data from being posted twice if a
-        # user hits the Back button.
-        return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
-
+        return None
 
 def register(request):
     # Like before, get the request's context.
@@ -106,7 +76,7 @@ def register(request):
 
     # Render the template depending on the context.
     return render_to_response(
-            'polls/register.html',
+        'tourbest/register.html',
             {'user_form': user_form, 'profile_form': profile_form, 'registered': registered},
             context)
 
@@ -135,7 +105,7 @@ def user_login(request):
                 # If the account is valid and active, we can log the user in.
                 # We'll send the user back to the homepage.
                 login(request, user)
-                return HttpResponseRedirect('/polls/')
+                return HttpResponseRedirect('/tourbest/')
             else:
                 # An inactive account was used - no logging in!
                 return HttpResponse("Your Rango account is disabled.")
@@ -149,7 +119,7 @@ def user_login(request):
     else:
         # No context variables to pass to the template system, hence the
         # blank dictionary object...
-        return render_to_response('polls/login.html', {}, context)
+        return render_to_response('tourbest/login.html', {}, context)
 
 def some_view(request):
     if not request.user.is_authenticated():
@@ -167,7 +137,4 @@ def user_logout(request):
     logout(request)
 
     # Take the user back to the homepage.
-    return HttpResponseRedirect('/polls/')
-
-def bootstrap_example(request):
-    return render_to_response('polls/dashboard.html')
+    return HttpResponseRedirect('/tourbest/')
