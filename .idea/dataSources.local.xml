@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="PostgreSQL - mydb@localhost" uuid="5072db44-db7f-44c6-873f-0490cc1e7bb2">
+    <data-source name="PostgreSQL - tourdb@localhost" uuid="337aa8ef-4b61-40b6-a573-8836ba95e324">
       <secret-storage>master_key</secret-storage>
       <user-name>ivan</user-name>
-      <schema-pattern>mydb.pg_catalog mydb.public</schema-pattern>
-      <default-schemas>mydb.public</default-schemas>
+      <schema-pattern>tourdb.pg_catalog tourdb.public</schema-pattern>
+      <default-schemas>tourdb.public</default-schemas>
     </data-source>
   </component>
 </project>

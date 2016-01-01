@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'MyDemo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydb',
+        'NAME': 'tourdb',
         'USER': 'ivan',
         'PASSWORD': 'root',
         'HOST': '', # Set to empty string for localhost.
