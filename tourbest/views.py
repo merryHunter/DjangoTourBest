@@ -7,18 +7,28 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
 from django.views import generic
 
-from polls.forms import UserForm
-from polls.forms import UserProfileForm
+from tourbest.forms import UserForm
+from tourbest.forms import UserProfileForm
+from tourbest.models import Tour
 
 
 class IndexView(generic.ListView):
     template_name = 'tourbest/index.html'
-    context_object_name = 'latest_question_list'
+    context_object_name = 'tour_list'
 
     def get_queryset(self):
         """Return the last five published questions."""
 
-        return None
+        return Tour.objects.all()
+
+class DetailView(generic.DetailView):
+    model = Tour
+    template_name = 'tourbest/detail.html'
+
+
+class ResultsView(generic.DetailView):
+    model = Tour
+    template_name = 'tourbest/results.html'
 
 def register(request):
     # Like before, get the request's context.

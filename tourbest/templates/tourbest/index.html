@@ -10,16 +10,15 @@
         <a href="{% url "tourbest:login" %}">Login</a><br />
         {% endif %}
 
-        {% if latest_question_list %}
+        {% if tour_list %}
             <ul>
-            {% for question in latest_question_list %}
-                <li><a href="{% url 'tourbest:detail' question.id %}">{{ question.question_text }}</a></li>
+            {% for tour in tour_list %}
+                <li><a href="{% url 'tourbest:detail' tour.id %}">{{ tour.description }}</a></li>
             {% endfor %}
             </ul>
         {% else %}
-            <p >No polls are available.</p>
+            <p >No tours are available.</p>
         {% endif %}
 
-        <p id="my"> yes</p>
    </div>
 {% endblock %}

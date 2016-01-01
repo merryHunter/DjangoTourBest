@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2421211022">
+  <component name="DataSourceManagerImpl" format="xml" hash="410647688">
     <data-source source="LOCAL" name="PostgreSQL - tourdb@localhost" uuid="337aa8ef-4b61-40b6-a573-8836ba95e324">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>

@@ -17,3 +17,20 @@ class UserProfile(models.Model):
     def __unicode__(self):
         return self.user.username
 
+class Style(models.Model):
+    title = models.CharField(max_length=40)
+
+class Tour(models.Model):
+    style_id = models.ForeignKey(Style)
+    price = models.IntegerField()
+    location = models.CharField(max_length=50)
+    duration = models.IntegerField()
+    hot = models.BooleanField()
+    available_count = models.IntegerField()
+    start_date = models.DateField()
+    finish_date = models.DateField()
+    description = models.CharField(max_length=300)
+
+class Bookings(models.Model):
+    user_id = models.ForeignKey(UserProfile)
+    tour_id = models.ForeignKey(Tour)

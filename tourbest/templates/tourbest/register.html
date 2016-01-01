@@ -9,11 +9,11 @@
 
         {% if registered %}
         App says: <strong>thank you for registering!</strong>
-        <a href="/polls/">Return to the homepage.</a><br />
+        <a href="/tourbest/">Return to the homepage.</a><br />
         {% else %}
         Rango says: <strong>register here!</strong><br />
 
-        <form id="user_form" method="post" action="/polls/register/"
+        <form id="user_form" method="post" action="/tourbest/register/"
                 enctype="multipart/form-data">
 
             {% csrf_token %}
