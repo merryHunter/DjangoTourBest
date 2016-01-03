@@ -1,44 +1,45 @@
 
-    {% load staticfiles %}
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>Tour Best</title>
+{% load staticfiles %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% trans 'Tour Best' %}</title>
 
-        <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'polls/dashboard.css' %}" />
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/dashboard.css' %}" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
 
-        <!-- Bootstrap Core CSS -->
-        <link href="http://www.tutorialspoint.com/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="http://www.tutorialspoint.com/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Custom CSS -->
-        <link href="{% static 'polls/dashboard.css' %}" rel="stylesheet">
-        <!-- jQuery -->
-        <script src="http://www.tutorialspoint.com/bootstrap/scripts/jquery.min.js">
-        </script>
+    <!-- Custom CSS -->
+    <link href="{% static 'polls/dashboard.css' %}" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="http://www.tutorialspoint.com/bootstrap/scripts/jquery.min.js">
+    </script>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="http://www.tutorialspoint.com/bootstrap/js/bootstrap.min.js">
-        </script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://www.tutorialspoint.com/bootstrap/js/bootstrap.min.js">
+    </script>
 
-    </head>
+</head>
 
-    {% block body %}
-        <body >
-            {% block dashboard %}
-                {% endblock %}
+{% block body %}
+    <body >
+        {% block dashboard %}
+            {% endblock %}
 
-            {% block page %}
-                {% endblock %}
+        {% block page %}
+            {% endblock %}
 
-            {% block footer %}
-                {% endblock %}
-        </body>
+        {% block footer %}
+            {% endblock %}
+    </body>
 
-    {% endblock %}
+{% endblock %}

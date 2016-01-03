@@ -167,4 +167,4 @@ def book_tour(request, tour_id):
     except StandardError, e:
         logger.error(e.message)
         return HttpResponse("Error!", status=503)
-    return HttpResponseRedirect('/tourbest/')
+    return HttpResponseRedirect('/tourbest/', "Successful!")

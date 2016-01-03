@@ -11,7 +11,7 @@
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
         <introspection-state-number>20275</introspection-state-number>
-        <introspection-timestamp>2016-01-02.19:38:02.505</introspection-timestamp>
+        <introspection-timestamp>2016-01-03.14:09:34.290</introspection-timestamp>
       </schema>
       <schema id="3" parent="1" name="pg_catalog">
         <object-id>11</object-id>
