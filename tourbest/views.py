@@ -9,9 +9,9 @@ from django.views import generic
 
 from tourbest.forms import UserForm
 from tourbest.forms import UserProfileForm
-from tourbest.models import Tour
-
-
+from tourbest.models import Tour, Bookings, UserProfile
+import logging
+logger = logging.getLogger(__name__)
 class IndexView(generic.ListView):
     template_name = 'tourbest/index.html'
     context_object_name = 'tour_list'
@@ -147,4 +147,24 @@ def user_logout(request):
     logout(request)
 
     # Take the user back to the homepage.
+    return HttpResponseRedirect('/tourbest/')
+
+
+@login_required
+def book_tour(request, tour_id):
+    '''
+    Book selected tour.
+    :param request: browser request
+    :param tour_id: selected tour id
+    :return: redirect to home
+    '''
+    try:
+        user_profile = UserProfile.objects.get(user=request.user)
+        tour = Tour.objects.get(id=tour_id)
+        book = Bookings(tour=tour,
+                        user=user_profile)
+        book.save()
+    except StandardError, e:
+        logger.error(e.message)
+        return HttpResponse("Error!", status=503)
     return HttpResponseRedirect('/tourbest/')

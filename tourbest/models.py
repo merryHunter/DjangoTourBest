@@ -12,7 +12,7 @@ class UserProfile(models.Model):
     # The additional attributes we wish to include.
     website = models.URLField(blank=True)
     picture = models.ImageField(upload_to='profile_images', blank=True)
-
+    sales_percent = models.DecimalField(max_digits=10, decimal_places=2, default=0.0)
     # Override the __unicode__() method to return out something meaningful!
     def __unicode__(self):
         return self.user.username
@@ -21,7 +21,7 @@ class Style(models.Model):
     title = models.CharField(max_length=40)
 
 class Tour(models.Model):
-    style_id = models.ForeignKey(Style)
+    style = models.ForeignKey(Style)
     price = models.IntegerField()
     location = models.CharField(max_length=50)
     duration = models.IntegerField()
@@ -30,7 +30,9 @@ class Tour(models.Model):
     start_date = models.DateField()
     finish_date = models.DateField()
     description = models.CharField(max_length=300)
+    picture = models.ImageField(upload_to='profile_images', blank=True)
 
 class Bookings(models.Model):
-    user_id = models.ForeignKey(UserProfile)
-    tour_id = models.ForeignKey(Tour)
+    user = models.ForeignKey(UserProfile)
+    tour = models.ForeignKey(Tour)
+    total_price = models.DecimalField(max_digits=10, decimal_places=2, default=0.0)
