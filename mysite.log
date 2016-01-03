@@ -1,0 +1,708 @@
+[02/Jan/2016 17:11:33] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:11:33] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:11:40] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:11:40.560597+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 11, 40, 560597, tzinfo=<UTC>))
+[02/Jan/2016 17:11:40] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:11:40] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:11:40.648903+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 11, 40, 648903, tzinfo=<UTC>))
+[02/Jan/2016 17:11:40] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:11:40] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour"; args=()
+[02/Jan/2016 17:12:50] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:12:50] DEBUG [django.db.backends:89] (0.013) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:13:22] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:13:22] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:13:25] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:13:25.488685+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 13, 25, 488685, tzinfo=<UTC>))
+[02/Jan/2016 17:13:25] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:13:25] DEBUG [tourbest.views:160] Tour id1
+[02/Jan/2016 17:13:25] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:13:25.558885+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 13, 25, 558885, tzinfo=<UTC>))
+[02/Jan/2016 17:13:25] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:13:25] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour"; args=()
+[02/Jan/2016 17:14:17] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:14:17] DEBUG [django.db.backends:89] (0.005) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:17:12] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:17:12] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:22:16] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:22:16] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:23:58] DEBUG [django.db.backends:89] (0.007) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:23:58] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:23:58] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:23:58.176463+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 23, 58, 176463, tzinfo=<UTC>))
+[02/Jan/2016 17:23:58] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:23:58] ERROR [tourbest.views:165] Cannot assign "1": "Bookings.user_id" must be a "UserProfile" instance.
+[02/Jan/2016 17:25:54] DEBUG [django.db.backends:89] (0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:25:54] DEBUG [django.db.backends:89] (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.307) 
+            SELECT
+                kc.constraint_name,
+                kc.column_name,
+                c.constraint_type,
+                array(SELECT table_name::text || '.' || column_name::text
+                      FROM information_schema.constraint_column_usage
+                      WHERE constraint_name = kc.constraint_name)
+            FROM information_schema.key_column_usage AS kc
+            JOIN information_schema.table_constraints AS c ON
+                kc.table_schema = c.table_schema AND
+                kc.table_name = c.table_name AND
+                kc.constraint_name = c.constraint_name
+            WHERE
+                kc.table_schema = 'public' AND
+                kc.table_name = 'tourbest_tour'
+            ORDER BY kc.ordinal_position ASC
+        ; args=[u'public', u'tourbest_tour']
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.027) 
+            SELECT kc.constraint_name, kc.column_name
+            FROM information_schema.constraint_column_usage AS kc
+            JOIN information_schema.table_constraints AS c ON
+                kc.table_schema = c.table_schema AND
+                kc.table_name = c.table_name AND
+                kc.constraint_name = c.constraint_name
+            WHERE
+                c.constraint_type = 'CHECK' AND
+                kc.table_schema = 'public' AND
+                kc.table_name = 'tourbest_tour'
+        ; args=[u'public', u'tourbest_tour']
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.024) 
+            SELECT
+                c2.relname,
+                ARRAY(
+                    SELECT (SELECT attname FROM pg_catalog.pg_attribute WHERE attnum = i AND attrelid = c.oid)
+                    FROM unnest(idx.indkey) i
+                ),
+                idx.indisunique,
+                idx.indisprimary
+            FROM pg_catalog.pg_class c, pg_catalog.pg_class c2,
+                pg_catalog.pg_index idx
+            WHERE c.oid = idx.indrelid
+                AND idx.indexrelid = c2.oid
+                AND c.relname = 'tourbest_tour'
+        ; args=[u'tourbest_tour']
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends.schema:101] ALTER TABLE "tourbest_tour" DROP CONSTRAINT "tourbest_tour_style_id_id_e8cde43a_fk_tourbest_style_id"; (params [])
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.026) ALTER TABLE "tourbest_tour" DROP CONSTRAINT "tourbest_tour_style_id_id_e8cde43a_fk_tourbest_style_id"; args=[]
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends.schema:101] ALTER TABLE "tourbest_tour" RENAME COLUMN "style_id_id" TO "style_id"; (params [])
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.001) ALTER TABLE "tourbest_tour" RENAME COLUMN "style_id_id" TO "style_id"; args=[]
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends.schema:101] ALTER TABLE "tourbest_tour" ADD CONSTRAINT "tourbest_tour_style_id_ac1afd05_fk_tourbest_style_id" FOREIGN KEY ("style_id") REFERENCES "tourbest_style" ("id") DEFERRABLE INITIALLY DEFERRED; (params [])
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.095) ALTER TABLE "tourbest_tour" ADD CONSTRAINT "tourbest_tour_style_id_ac1afd05_fk_tourbest_style_id" FOREIGN KEY ("style_id") REFERENCES "tourbest_style" ("id") DEFERRABLE INITIALLY DEFERRED; args=[]
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('tourbest', '0005_auto_20160102_1726', '2016-01-02T17:26:05.898687+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('tourbest', u'0005_auto_20160102_1726', datetime.datetime(2016, 1, 2, 17, 26, 5, 898687, tzinfo=<UTC>))
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'userprofile' AND "django_content_type"."app_label" = 'tourbest'); args=('userprofile', 'tourbest')
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'style' AND "django_content_type"."app_label" = 'tourbest'); args=('style', 'tourbest')
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tour' AND "django_content_type"."app_label" = 'tourbest'); args=('tour', 'tourbest')
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'bookings' AND "django_content_type"."app_label" = 'tourbest'); args=('bookings', 'tourbest')
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.002) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (11, 12, 13, 14) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(11, 12, 13, 14)
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'tourbest'; args=('tourbest',)
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2,)
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (3, 4, 5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(3, 4, 5)
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,)
+[02/Jan/2016 17:26:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+[02/Jan/2016 17:26:26] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:26:26] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:26:27] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:26:27.158754+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 26, 27, 158754, tzinfo=<UTC>))
+[02/Jan/2016 17:26:27] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:26:27] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 1 LIMIT 1; args=(1,)
+[02/Jan/2016 17:26:27] ERROR [tourbest.views:166] list index out of range
+[02/Jan/2016 17:27:00] WARNING [django.request:182] Not Found: /tourbest/register
+[02/Jan/2016 17:27:00] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[02/Jan/2016 17:27:25] DEBUG [django.db.backends:89] (0.069) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'test' LIMIT 1; args=(u'test',)
+[02/Jan/2016 17:27:25] DEBUG [django.db.backends:89] (0.081) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('test123456', NULL, false, 'test', '', '', 'test@gmail.com', false, true, '2016-01-02T17:27:25.523365+00:00'::timestamptz) RETURNING "auth_user"."id"; args=(u'test123456', None, False, u'test', u'', u'', u'test@gmail.com', False, True, datetime.datetime(2016, 1, 2, 17, 27, 25, 523365, tzinfo=<UTC>))
+[02/Jan/2016 17:27:25] DEBUG [django.db.backends:89] (0.001) UPDATE "auth_user" SET "password" = 'pbkdf2_sha256$24000$uYqDUdD0Zrab$8Pv1IyVe0bPNUDA70NRx3yfs7HRV4UBDb90dzbte86E=', "last_login" = NULL, "is_superuser" = false, "username" = 'test', "first_name" = '', "last_name" = '', "email" = 'test@gmail.com', "is_staff" = false, "is_active" = true, "date_joined" = '2016-01-02T17:27:25.523365+00:00'::timestamptz WHERE "auth_user"."id" = 2; args=(u'pbkdf2_sha256$24000$uYqDUdD0Zrab$8Pv1IyVe0bPNUDA70NRx3yfs7HRV4UBDb90dzbte86E=', False, u'test', u'', u'', u'test@gmail.com', False, True, datetime.datetime(2016, 1, 2, 17, 27, 25, 523365, tzinfo=<UTC>), 2)
+[02/Jan/2016 17:27:25] DEBUG [django.db.backends:89] (0.010) INSERT INTO "tourbest_userprofile" ("user_id", "website", "picture", "sales_percent") VALUES (2, '', '', '0.00') RETURNING "tourbest_userprofile"."id"; args=(2, u'', u'', u'0.00')
+[02/Jan/2016 17:27:28] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:27:28.325375+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 27, 28, 325375, tzinfo=<UTC>))
+[02/Jan/2016 17:27:28] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:27:28] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour"; args=()
+[02/Jan/2016 17:27:32] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:27:32.014456+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 27, 32, 14456, tzinfo=<UTC>))
+[02/Jan/2016 17:27:32] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:27:32] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 1 LIMIT 1; args=(1,)
+[02/Jan/2016 17:27:32] ERROR [tourbest.views:166] list index out of range
+[02/Jan/2016 17:32:59] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:32:59] DEBUG [django.db.backends:89] (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:33:00] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:33:00.151960+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 33, 0, 151960, tzinfo=<UTC>))
+[02/Jan/2016 17:33:00] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:33:00] DEBUG [django.db.backends:89] (0.003) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 1 LIMIT 21; args=(1,)
+[02/Jan/2016 17:33:00] ERROR [tourbest.views:166] Cannot assign "[]": "Bookings.user_id" must be a "UserProfile" instance.
+[02/Jan/2016 17:33:47] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:33:47] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.013) 
+            SELECT
+                kc.constraint_name,
+                kc.column_name,
+                c.constraint_type,
+                array(SELECT table_name::text || '.' || column_name::text
+                      FROM information_schema.constraint_column_usage
+                      WHERE constraint_name = kc.constraint_name)
+            FROM information_schema.key_column_usage AS kc
+            JOIN information_schema.table_constraints AS c ON
+                kc.table_schema = c.table_schema AND
+                kc.table_name = c.table_name AND
+                kc.constraint_name = c.constraint_name
+            WHERE
+                kc.table_schema = 'public' AND
+                kc.table_name = 'tourbest_bookings'
+            ORDER BY kc.ordinal_position ASC
+        ; args=[u'public', u'tourbest_bookings']
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.009) 
+            SELECT kc.constraint_name, kc.column_name
+            FROM information_schema.constraint_column_usage AS kc
+            JOIN information_schema.table_constraints AS c ON
+                kc.table_schema = c.table_schema AND
+                kc.table_name = c.table_name AND
+                kc.constraint_name = c.constraint_name
+            WHERE
+                c.constraint_type = 'CHECK' AND
+                kc.table_schema = 'public' AND
+                kc.table_name = 'tourbest_bookings'
+        ; args=[u'public', u'tourbest_bookings']
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.002) 
+            SELECT
+                c2.relname,
+                ARRAY(
+                    SELECT (SELECT attname FROM pg_catalog.pg_attribute WHERE attnum = i AND attrelid = c.oid)
+                    FROM unnest(idx.indkey) i
+                ),
+                idx.indisunique,
+                idx.indisprimary
+            FROM pg_catalog.pg_class c, pg_catalog.pg_class c2,
+                pg_catalog.pg_index idx
+            WHERE c.oid = idx.indrelid
+                AND idx.indexrelid = c2.oid
+                AND c.relname = 'tourbest_bookings'
+        ; args=[u'tourbest_bookings']
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends.schema:101] ALTER TABLE "tourbest_bookings" DROP CONSTRAINT "tourbest_bookings_tour_id_id_41c0200e_fk_tourbest_tour_id"; (params [])
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.003) ALTER TABLE "tourbest_bookings" DROP CONSTRAINT "tourbest_bookings_tour_id_id_41c0200e_fk_tourbest_tour_id"; args=[]
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends.schema:101] ALTER TABLE "tourbest_bookings" RENAME COLUMN "tour_id_id" TO "tour_id"; (params [])
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) ALTER TABLE "tourbest_bookings" RENAME COLUMN "tour_id_id" TO "tour_id"; args=[]
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends.schema:101] ALTER TABLE "tourbest_bookings" ADD CONSTRAINT "tourbest_bookings_tour_id_c37d5cd4_fk_tourbest_tour_id" FOREIGN KEY ("tour_id") REFERENCES "tourbest_tour" ("id") DEFERRABLE INITIALLY DEFERRED; (params [])
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.002) ALTER TABLE "tourbest_bookings" ADD CONSTRAINT "tourbest_bookings_tour_id_c37d5cd4_fk_tourbest_tour_id" FOREIGN KEY ("tour_id") REFERENCES "tourbest_tour" ("id") DEFERRABLE INITIALLY DEFERRED; args=[]
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.009) 
+            SELECT
+                kc.constraint_name,
+                kc.column_name,
+                c.constraint_type,
+                array(SELECT table_name::text || '.' || column_name::text
+                      FROM information_schema.constraint_column_usage
+                      WHERE constraint_name = kc.constraint_name)
+            FROM information_schema.key_column_usage AS kc
+            JOIN information_schema.table_constraints AS c ON
+                kc.table_schema = c.table_schema AND
+                kc.table_name = c.table_name AND
+                kc.constraint_name = c.constraint_name
+            WHERE
+                kc.table_schema = 'public' AND
+                kc.table_name = 'tourbest_bookings'
+            ORDER BY kc.ordinal_position ASC
+        ; args=[u'public', u'tourbest_bookings']
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.006) 
+            SELECT kc.constraint_name, kc.column_name
+            FROM information_schema.constraint_column_usage AS kc
+            JOIN information_schema.table_constraints AS c ON
+                kc.table_schema = c.table_schema AND
+                kc.table_name = c.table_name AND
+                kc.constraint_name = c.constraint_name
+            WHERE
+                c.constraint_type = 'CHECK' AND
+                kc.table_schema = 'public' AND
+                kc.table_name = 'tourbest_bookings'
+        ; args=[u'public', u'tourbest_bookings']
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.001) 
+            SELECT
+                c2.relname,
+                ARRAY(
+                    SELECT (SELECT attname FROM pg_catalog.pg_attribute WHERE attnum = i AND attrelid = c.oid)
+                    FROM unnest(idx.indkey) i
+                ),
+                idx.indisunique,
+                idx.indisprimary
+            FROM pg_catalog.pg_class c, pg_catalog.pg_class c2,
+                pg_catalog.pg_index idx
+            WHERE c.oid = idx.indrelid
+                AND idx.indexrelid = c2.oid
+                AND c.relname = 'tourbest_bookings'
+        ; args=[u'tourbest_bookings']
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends.schema:101] ALTER TABLE "tourbest_bookings" DROP CONSTRAINT "tourbest_booking_user_id_id_52f9ee2e_fk_tourbest_userprofile_id"; (params [])
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.001) ALTER TABLE "tourbest_bookings" DROP CONSTRAINT "tourbest_booking_user_id_id_52f9ee2e_fk_tourbest_userprofile_id"; args=[]
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends.schema:101] ALTER TABLE "tourbest_bookings" RENAME COLUMN "user_id_id" TO "user_id"; (params [])
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) ALTER TABLE "tourbest_bookings" RENAME COLUMN "user_id_id" TO "user_id"; args=[]
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends.schema:101] ALTER TABLE "tourbest_bookings" ADD CONSTRAINT "tourbest_bookings_user_id_cee4af57_fk_tourbest_userprofile_id" FOREIGN KEY ("user_id") REFERENCES "tourbest_userprofile" ("id") DEFERRABLE INITIALLY DEFERRED; (params [])
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.001) ALTER TABLE "tourbest_bookings" ADD CONSTRAINT "tourbest_bookings_user_id_cee4af57_fk_tourbest_userprofile_id" FOREIGN KEY ("user_id") REFERENCES "tourbest_userprofile" ("id") DEFERRABLE INITIALLY DEFERRED; args=[]
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('tourbest', '0006_auto_20160102_1733', '2016-01-02T17:33:53.956858+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('tourbest', u'0006_auto_20160102_1733', datetime.datetime(2016, 1, 2, 17, 33, 53, 956858, tzinfo=<UTC>))
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'userprofile' AND "django_content_type"."app_label" = 'tourbest'); args=('userprofile', 'tourbest')
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'style' AND "django_content_type"."app_label" = 'tourbest'); args=('style', 'tourbest')
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'tour' AND "django_content_type"."app_label" = 'tourbest'); args=('tour', 'tourbest')
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'bookings' AND "django_content_type"."app_label" = 'tourbest'); args=('bookings', 'tourbest')
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.004) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (11, 12, 13, 14) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(11, 12, 13, 14)
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'tourbest'; args=('tourbest',)
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2,)
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (3, 4, 5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(3, 4, 5)
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+[02/Jan/2016 17:33:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+[02/Jan/2016 17:33:54] DEBUG [django.db.backends:89] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+[02/Jan/2016 17:33:54] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+[02/Jan/2016 17:33:54] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+[02/Jan/2016 17:33:54] DEBUG [django.db.backends:89] (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,)
+[02/Jan/2016 17:33:54] DEBUG [django.db.backends:89] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+[02/Jan/2016 17:33:59] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:33:59.072588+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 33, 59, 72588, tzinfo=<UTC>))
+[02/Jan/2016 17:33:59] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:33:59] ERROR [tourbest.views:166] int() argument must be a string or a number, not 'QuerySet'
+[02/Jan/2016 17:34:00] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:34:00.182503+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 34, 0, 182503, tzinfo=<UTC>))
+[02/Jan/2016 17:34:00] DEBUG [django.db.backends:89] (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:34:00] ERROR [tourbest.views:166] int() argument must be a string or a number, not 'QuerySet'
+[02/Jan/2016 17:34:36] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:34:36] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:34:36] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:34:36.034759+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 34, 36, 34759, tzinfo=<UTC>))
+[02/Jan/2016 17:34:36] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:34:36] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 1 LIMIT 1; args=(1,)
+[02/Jan/2016 17:34:36] ERROR [tourbest.views:166] list index out of range
+[02/Jan/2016 17:34:37] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:34:37.095661+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 34, 37, 95661, tzinfo=<UTC>))
+[02/Jan/2016 17:34:37] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:34:37] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 1 LIMIT 1; args=(1,)
+[02/Jan/2016 17:34:37] ERROR [tourbest.views:166] list index out of range
+[02/Jan/2016 17:35:27] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:35:27] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:35:28] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:35:28.448668+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 35, 28, 448668, tzinfo=<UTC>))
+[02/Jan/2016 17:35:28] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:35:28] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 1 LIMIT 1; args=(1,)
+[02/Jan/2016 17:35:28] ERROR [tourbest.views:166] list index out of range
+[02/Jan/2016 17:35:29] DEBUG [django.db.backends:89] (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:35:29.593368+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 35, 29, 593368, tzinfo=<UTC>))
+[02/Jan/2016 17:35:29] DEBUG [django.db.backends:89] (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:35:29] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 1 LIMIT 1; args=(1,)
+[02/Jan/2016 17:35:29] ERROR [tourbest.views:166] list index out of range
+[02/Jan/2016 17:36:23] DEBUG [django.db.backends:89] (0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:36:23] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:36:23] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:36:23.839089+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 36, 23, 839089, tzinfo=<UTC>))
+[02/Jan/2016 17:36:23] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:36:23] ERROR [tourbest.views:167] 'QuerySet' object has no attribute 'id'
+[02/Jan/2016 17:36:51] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:36:51] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:36:51] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:36:51.805650+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 36, 51, 805650, tzinfo=<UTC>))
+[02/Jan/2016 17:36:51] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:36:51] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 1 ORDER BY "tourbest_userprofile"."id" ASC LIMIT 1; args=(1,)
+[02/Jan/2016 17:36:51] ERROR [tourbest.views:167] 'NoneType' object has no attribute 'id'
+[02/Jan/2016 17:37:12] DEBUG [django.db.backends:89] (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:37:12] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:38:40] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:38:40] DEBUG [django.db.backends:89] (0.004) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:39:24] DEBUG [django.db.backends:89] (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:39:24] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:43:48] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:43:48] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:44:14] DEBUG [django.db.backends:89] (0.010) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:44:14] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:44:19] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:44:19.865966+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 44, 19, 865966, tzinfo=<UTC>))
+[02/Jan/2016 17:44:19] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:44:19] DEBUG [tourbest.views:162] ID:   	1
+[02/Jan/2016 17:44:19] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 1; args=(1,)
+[02/Jan/2016 17:44:19] ERROR [django.request:284] Internal Server Error: /tourbest/book/1/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ivan/PycharmProjects/MyDemo/tourbest/views.py", line 163, in book_tour
+    user_id = UserProfile.objects.get(user=request.user.id).first().id
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: UserProfile matching query does not exist.
+[02/Jan/2016 17:44:19] DEBUG [django.db.backends:89] (0.000) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" LIMIT 21; args=()
+[02/Jan/2016 17:44:19] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+[02/Jan/2016 17:45:21] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:45:21] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:47:04] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs' AND "django_session"."expire_date" > '2016-01-02T17:47:04.193965+00:00'::timestamptz); args=('8xyve9thrqz5b94puisl6uoqle3pe1zs', datetime.datetime(2016, 1, 2, 17, 47, 4, 193965, tzinfo=<UTC>))
+[02/Jan/2016 17:47:04] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[02/Jan/2016 17:47:04] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '8xyve9thrqz5b94puisl6uoqle3pe1zs'; args=('8xyve9thrqz5b94puisl6uoqle3pe1zs',)
+[02/Jan/2016 17:47:04] DEBUG [django.db.backends:89] (0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('8xyve9thrqz5b94puisl6uoqle3pe1zs'); args=(u'8xyve9thrqz5b94puisl6uoqle3pe1zs',)
+[02/Jan/2016 17:47:04] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour"; args=()
+[02/Jan/2016 17:47:05] ERROR [django.request:284] Internal Server Error: /tourbest/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ivan/PycharmProjects/MyDemo/tourbest/views.py", line 132, in user_login
+    return render_to_response('tourbest/login.html', {}, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
+    using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 137, in render_to_string
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: tourbest/login.html
+[02/Jan/2016 17:47:06] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'None'
+[02/Jan/2016 17:47:06] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'None'
+[02/Jan/2016 17:47:17] DEBUG [django.db.backends:89] (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'test'; args=(u'test',)
+[02/Jan/2016 17:47:17] DEBUG [django.db.backends:89] (0.001) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'pkwaoo4yhezyhterqfo3xmx822na99ga' LIMIT 1; args=(u'pkwaoo4yhezyhterqfo3xmx822na99ga',)
+[02/Jan/2016 17:47:17] DEBUG [django.db.backends:89] (0.009) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('pkwaoo4yhezyhterqfo3xmx822na99ga', 'ZTY0NGJhNzcyNjA3ZmYzNmJmNjI1ZjFjN2EyZGQwMDI3N2EwM2ViMDp7fQ==', '2016-01-16T17:47:17.605831+00:00'::timestamptz); args=(u'pkwaoo4yhezyhterqfo3xmx822na99ga', u'ZTY0NGJhNzcyNjA3ZmYzNmJmNjI1ZjFjN2EyZGQwMDI3N2EwM2ViMDp7fQ==', datetime.datetime(2016, 1, 16, 17, 47, 17, 605831, tzinfo=<UTC>))
+[02/Jan/2016 17:47:17] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'pkwaoo4yhezyhterqfo3xmx822na99ga'; args=(u'pkwaoo4yhezyhterqfo3xmx822na99ga',)
+[02/Jan/2016 17:47:17] DEBUG [django.db.backends:89] (0.001) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('pkwaoo4yhezyhterqfo3xmx822na99ga'); args=(u'pkwaoo4yhezyhterqfo3xmx822na99ga',)
+[02/Jan/2016 17:47:17] DEBUG [django.db.backends:89] (0.001) UPDATE "auth_user" SET "last_login" = '2016-01-02T17:47:17.652411+00:00'::timestamptz WHERE "auth_user"."id" = 2; args=(datetime.datetime(2016, 1, 2, 17, 47, 17, 652411, tzinfo=<UTC>), 2)
+[02/Jan/2016 17:47:17] DEBUG [django.db.backends:89] (0.001) UPDATE "django_session" SET "session_data" = 'NzIwZGVlMWFlYTdlYzM3OGNmM2Y0MmExOWQ0NGJiM2M1NjA1Y2IxZjp7Il9hdXRoX3VzZXJfaGFzaCI6ImM1MjNkZmVmOGMxMjhjZjIxOWZjMzUzMWI3MWFiNzM2YzFlZTFjZjkiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=', "expire_date" = '2016-01-16T17:47:17.663681+00:00'::timestamptz WHERE "django_session"."session_key" = 'pkwaoo4yhezyhterqfo3xmx822na99ga'; args=(u'NzIwZGVlMWFlYTdlYzM3OGNmM2Y0MmExOWQ0NGJiM2M1NjA1Y2IxZjp7Il9hdXRoX3VzZXJfaGFzaCI6ImM1MjNkZmVmOGMxMjhjZjIxOWZjMzUzMWI3MWFiNzM2YzFlZTFjZjkiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=', datetime.datetime(2016, 1, 16, 17, 47, 17, 663681, tzinfo=<UTC>), u'pkwaoo4yhezyhterqfo3xmx822na99ga')
+[02/Jan/2016 17:47:17] DEBUG [django.db.backends:89] (0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('pkwaoo4yhezyhterqfo3xmx822na99ga', 'NzIwZGVlMWFlYTdlYzM3OGNmM2Y0MmExOWQ0NGJiM2M1NjA1Y2IxZjp7Il9hdXRoX3VzZXJfaGFzaCI6ImM1MjNkZmVmOGMxMjhjZjIxOWZjMzUzMWI3MWFiNzM2YzFlZTFjZjkiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=', '2016-01-16T17:47:17.663681+00:00'::timestamptz); args=(u'pkwaoo4yhezyhterqfo3xmx822na99ga', u'NzIwZGVlMWFlYTdlYzM3OGNmM2Y0MmExOWQ0NGJiM2M1NjA1Y2IxZjp7Il9hdXRoX3VzZXJfaGFzaCI6ImM1MjNkZmVmOGMxMjhjZjIxOWZjMzUzMWI3MWFiNzM2YzFlZTFjZjkiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=', datetime.datetime(2016, 1, 16, 17, 47, 17, 663681, tzinfo=<UTC>))
+[02/Jan/2016 17:47:17] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pkwaoo4yhezyhterqfo3xmx822na99ga' AND "django_session"."expire_date" > '2016-01-02T17:47:17.687334+00:00'::timestamptz); args=('pkwaoo4yhezyhterqfo3xmx822na99ga', datetime.datetime(2016, 1, 2, 17, 47, 17, 687334, tzinfo=<UTC>))
+[02/Jan/2016 17:47:17] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+[02/Jan/2016 17:47:17] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour"; args=()
+[02/Jan/2016 17:47:20] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pkwaoo4yhezyhterqfo3xmx822na99ga' AND "django_session"."expire_date" > '2016-01-02T17:47:20.726127+00:00'::timestamptz); args=('pkwaoo4yhezyhterqfo3xmx822na99ga', datetime.datetime(2016, 1, 2, 17, 47, 20, 726127, tzinfo=<UTC>))
+[02/Jan/2016 17:47:20] DEBUG [django.db.backends:89] (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+[02/Jan/2016 17:47:20] DEBUG [tourbest.views:162] ID:   	2
+[02/Jan/2016 17:47:20] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 2; args=(2,)
+[02/Jan/2016 17:47:20] ERROR [tourbest.views:169] 'UserProfile' object has no attribute 'first'
+[02/Jan/2016 17:47:39] DEBUG [django.db.backends:89] (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:47:39] DEBUG [django.db.backends:89] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:47:41] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pkwaoo4yhezyhterqfo3xmx822na99ga' AND "django_session"."expire_date" > '2016-01-02T17:47:41.630439+00:00'::timestamptz); args=('pkwaoo4yhezyhterqfo3xmx822na99ga', datetime.datetime(2016, 1, 2, 17, 47, 41, 630439, tzinfo=<UTC>))
+[02/Jan/2016 17:47:41] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+[02/Jan/2016 17:47:41] DEBUG [tourbest.views:162] ID:   	2
+[02/Jan/2016 17:47:41] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 2; args=(2,)
+[02/Jan/2016 17:47:41] ERROR [tourbest.views:169] 'UserProfile' object does not support indexing
+[02/Jan/2016 17:48:00] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:48:00] DEBUG [django.db.backends:89] (0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:48:01] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pkwaoo4yhezyhterqfo3xmx822na99ga' AND "django_session"."expire_date" > '2016-01-02T17:48:01.620602+00:00'::timestamptz); args=('pkwaoo4yhezyhterqfo3xmx822na99ga', datetime.datetime(2016, 1, 2, 17, 48, 1, 620602, tzinfo=<UTC>))
+[02/Jan/2016 17:48:01] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+[02/Jan/2016 17:48:01] DEBUG [tourbest.views:162] ID:   	2
+[02/Jan/2016 17:48:01] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 2; args=(2,)
+[02/Jan/2016 17:48:01] DEBUG [tourbest.views:164] ID:   	1
+[02/Jan/2016 17:48:01] ERROR [tourbest.views:169] Cannot assign "1": "Bookings.user" must be a "UserProfile" instance.
+[02/Jan/2016 17:48:45] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:48:45] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:48:46] DEBUG [django.db.backends:89] (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pkwaoo4yhezyhterqfo3xmx822na99ga' AND "django_session"."expire_date" > '2016-01-02T17:48:46.422119+00:00'::timestamptz); args=('pkwaoo4yhezyhterqfo3xmx822na99ga', datetime.datetime(2016, 1, 2, 17, 48, 46, 422119, tzinfo=<UTC>))
+[02/Jan/2016 17:48:46] DEBUG [django.db.backends:89] (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+[02/Jan/2016 17:48:46] DEBUG [tourbest.views:162] ID:   	2
+[02/Jan/2016 17:48:46] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 2; args=(2,)
+[02/Jan/2016 17:48:46] ERROR [tourbest.views:168] Cannot assign "u'1'": "Bookings.tour" must be a "Tour" instance.
+[02/Jan/2016 17:49:22] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[02/Jan/2016 17:49:22] DEBUG [django.db.backends:89] (0.004) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[02/Jan/2016 17:49:23] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pkwaoo4yhezyhterqfo3xmx822na99ga' AND "django_session"."expire_date" > '2016-01-02T17:49:23.547230+00:00'::timestamptz); args=('pkwaoo4yhezyhterqfo3xmx822na99ga', datetime.datetime(2016, 1, 2, 17, 49, 23, 547230, tzinfo=<UTC>))
+[02/Jan/2016 17:49:23] DEBUG [django.db.backends:89] (0.009) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+[02/Jan/2016 17:49:23] DEBUG [django.db.backends:89] (0.002) SELECT "tourbest_userprofile"."id", "tourbest_userprofile"."user_id", "tourbest_userprofile"."website", "tourbest_userprofile"."picture", "tourbest_userprofile"."sales_percent" FROM "tourbest_userprofile" WHERE "tourbest_userprofile"."user_id" = 2; args=(2,)
+[02/Jan/2016 17:49:23] DEBUG [django.db.backends:89] (0.005) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour" WHERE "tourbest_tour"."id" = 1; args=(1,)
+[02/Jan/2016 17:49:23] DEBUG [django.db.backends:89] (0.017) INSERT INTO "tourbest_bookings" ("user_id", "tour_id", "total_price") VALUES (1, 1, '0.00') RETURNING "tourbest_bookings"."id"; args=(1, 1, u'0.00')
+[02/Jan/2016 17:49:23] DEBUG [django.db.backends:89] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pkwaoo4yhezyhterqfo3xmx822na99ga' AND "django_session"."expire_date" > '2016-01-02T17:49:23.846094+00:00'::timestamptz); args=('pkwaoo4yhezyhterqfo3xmx822na99ga', datetime.datetime(2016, 1, 2, 17, 49, 23, 846094, tzinfo=<UTC>))
+[02/Jan/2016 17:49:23] DEBUG [django.db.backends:89] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+[02/Jan/2016 17:49:23] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour"; args=()
+[03/Jan/2016 09:48:36] DEBUG [django.db.backends:89] (0.266) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[03/Jan/2016 09:48:36] DEBUG [django.db.backends:89] (0.076) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[03/Jan/2016 09:48:39] WARNING [django.request:182] Not Found: /
+[03/Jan/2016 09:48:39] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[03/Jan/2016 09:48:39] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'tourbest.urls' from '/home/ivan/PycharmProjects/MyDemo/tourbest/urls.pyc'> (tourbest:tourbest) ^tourbest/>"
+[03/Jan/2016 09:48:39] WARNING [django.request:182] Not Found: /favicon.ico
+[03/Jan/2016 09:48:39] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[03/Jan/2016 09:48:39] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'tourbest.urls' from '/home/ivan/PycharmProjects/MyDemo/tourbest/urls.pyc'> (tourbest:tourbest) ^tourbest/>"
+[03/Jan/2016 09:48:39] WARNING [django.request:182] Not Found: /favicon.ico
+[03/Jan/2016 09:48:39] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[03/Jan/2016 09:48:39] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'tourbest.urls' from '/home/ivan/PycharmProjects/MyDemo/tourbest/urls.pyc'> (tourbest:tourbest) ^tourbest/>"
+[03/Jan/2016 09:48:44] DEBUG [django.db.backends:89] (0.089) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pkwaoo4yhezyhterqfo3xmx822na99ga' AND "django_session"."expire_date" > '2016-01-03T09:48:44.785166+00:00'::timestamptz); args=('pkwaoo4yhezyhterqfo3xmx822na99ga', datetime.datetime(2016, 1, 3, 9, 48, 44, 785166, tzinfo=<UTC>))
+[03/Jan/2016 09:48:44] DEBUG [django.db.backends:89] (0.039) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+[03/Jan/2016 09:48:44] DEBUG [django.db.backends:89] (0.042) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour"; args=()
+[03/Jan/2016 09:49:00] DEBUG [django.db.backends:89] (0.002) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour" WHERE "tourbest_tour"."id" = 1; args=(1,)
+[03/Jan/2016 09:49:00] DEBUG [django.template:923] Exception while resolving variable 'error_message' in template 'tourbest/detail.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_message] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7fb11f5bd320>>, 'user': <SimpleLazyObject: <function <lambda> at 0x7fb12406ad70>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb124060f90>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb1240a3650>, u'request': <WSGIRequest: GET '/tourbest/1/'>}, {}, {'tour': <Tour: Tour object>, u'object': <Tour: Tour object>, u'view': <tourbest.views.DetailView object at 0x7fb1240a3cd0>}]"
+[03/Jan/2016 10:05:52] DEBUG [django.db.backends:89] (1.044) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[03/Jan/2016 10:05:52] DEBUG [django.db.backends:89] (0.104) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[03/Jan/2016 10:07:00] DEBUG [django.db.backends:89] (0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[03/Jan/2016 10:07:00] DEBUG [django.db.backends:89] (0.005) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[03/Jan/2016 10:07:03] WARNING [django.request:182] Not Found: /
+[03/Jan/2016 10:07:03] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[03/Jan/2016 10:07:03] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'tourbest.urls' from '/home/ivan/PycharmProjects/MyDemo/tourbest/urls.pyc'> (tourbest:tourbest) ^tourbest/>"
+[03/Jan/2016 10:07:04] WARNING [django.request:182] Not Found: /favicon.ico
+[03/Jan/2016 10:07:04] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[03/Jan/2016 10:07:04] DEBUG [django.template:923] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'tourbest.urls' from '/home/ivan/PycharmProjects/MyDemo/tourbest/urls.pyc'> (tourbest:tourbest) ^tourbest/>"
+[03/Jan/2016 10:07:14] DEBUG [django.db.backends:89] (0.324) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pkwaoo4yhezyhterqfo3xmx822na99ga' AND "django_session"."expire_date" > '2016-01-03T10:07:13.816001+00:00'::timestamptz); args=('pkwaoo4yhezyhterqfo3xmx822na99ga', datetime.datetime(2016, 1, 3, 10, 7, 13, 816001, tzinfo=<UTC>))
+[03/Jan/2016 10:07:14] DEBUG [django.db.backends:89] (0.116) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+[03/Jan/2016 10:07:14] DEBUG [django.db.backends:89] (0.076) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour"; args=()
+[03/Jan/2016 10:09:20] DEBUG [django.db.backends:89] (0.002) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour" WHERE "tourbest_tour"."id" = 1; args=(1,)
+[03/Jan/2016 10:09:20] DEBUG [django.template:923] Exception while resolving variable 'error_message' in template 'tourbest/detail.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_message] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7fc372027230>>, 'user': <SimpleLazyObject: <function <lambda> at 0x7fc3720ef410>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fc37201c590>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fc37208b850>, u'request': <WSGIRequest: GET '/tourbest/1/'>}, {}, {'tour': <Tour: Tour object>, u'object': <Tour: Tour object>, u'view': <tourbest.views.DetailView object at 0x7fc37208b910>}]"
+[03/Jan/2016 10:09:41] DEBUG [django.db.backends:89] (0.002) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour" WHERE "tourbest_tour"."id" = 1; args=(1,)
+[03/Jan/2016 10:10:02] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour" WHERE "tourbest_tour"."id" = 1; args=(1,)
+[03/Jan/2016 10:10:21] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour" WHERE "tourbest_tour"."id" = 1; args=(1,)
+[03/Jan/2016 10:10:22] DEBUG [django.db.backends:89] (0.002) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour" WHERE "tourbest_tour"."id" = 1; args=(1,)
+[03/Jan/2016 10:10:44] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour" WHERE "tourbest_tour"."id" = 1; args=(1,)
+[03/Jan/2016 10:10:49] DEBUG [django.db.backends:89] (0.001) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour" WHERE "tourbest_tour"."id" = 1; args=(1,)
+[03/Jan/2016 10:10:50] DEBUG [django.db.backends:89] (0.002) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour" WHERE "tourbest_tour"."id" = 1; args=(1,)
+[03/Jan/2016 10:11:22] DEBUG [django.db.backends:89] (0.002) SELECT "tourbest_tour"."id", "tourbest_tour"."style_id", "tourbest_tour"."price", "tourbest_tour"."location", "tourbest_tour"."duration", "tourbest_tour"."hot", "tourbest_tour"."available_count", "tourbest_tour"."start_date", "tourbest_tour"."finish_date", "tourbest_tour"."description", "tourbest_tour"."picture" FROM "tourbest_tour" WHERE "tourbest_tour"."id" = 1; args=(1,)
+[03/Jan/2016 10:11:22] DEBUG [django.template:923] Exception while resolving variable 'error_message' in template 'tourbest/detail.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 901, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_message] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: u\'jjThxmGNu9iHMcfY5DBvcPVL0ARuR7oa\'>, \'user\': <SimpleLazyObject: <function <lambda> at 0x7fc372027c80>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7fc37205d3d0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fc37208b890>, u\'request\': <WSGIRequest: GET \'/tourbest/1/\'>}, {}, {\'tour\': <Tour: Tour object>, u\'object\': <Tour: Tour object>, u\'view\': <tourbest.views.DetailView object at 0x7fc37208b9d0>}, {\'block\': <Block Node: body. Contents: [<TextNode: u\'\\n        <body >\\n        \'>, <Block Node: dashboard. Contents: [<TextNode: u\'\\n                \'>]>, <TextNode: u\'\\n\\n            \'>, <Block Node: page. Contents: [<TextNode: u\'\\n                \'>]>, <TextNode: u\'\\n\\n            \'>, <Block Node: footer. Contents: [<TextNode: u\'\\n                \'>]>, <TextNode: u\'\\n        </body>\\n\\n    \'>]>}, {\'block\': <Block Node: page. Contents: [<TextNode: u\'\\n<div class="container">\\n\'>, <Variable Node: tour.description>, <TextNode: u\'</h1>\\n\'>, <IfNode>, <TextNode: u\'\\n\\n</div>\\n\\n\'>]>}]'
