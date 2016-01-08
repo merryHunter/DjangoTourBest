@@ -1,26 +1,28 @@
 
 
 {% extends "tourbest/dashboard.html" %}
+{% load staticfiles %}
+{% load  static %}
 {% block page %}
    <div class="container">
-        {% if user.is_authenticated %}
-        <a href="{% url 'tourbest:logout' %}">Logout</a><br />
-        {% else %}
-        <a href="{% url "tourbest:register" %}">Register Here</a><br />
-        <a href="{% url "tourbest:login" %}">Login</a><br />
-        {% endif %}
-
         {% if tour_list %}
-            <ul>
-            {% for tour in tour_list %}
-                <li><a href="{% url 'tourbest:detail' tour.id %}">{{ tour.description }}</a></li>
-                <li><a href="{% url 'tourbest:book' tour.id %}"> Book! </a></li>
-
-            {% endfor %}
-            </ul>
+            <div class="tour-list">
+                {% for tour in tour_list %}
+                    <img src="{{ tour.picture.url }}" class="tour-image" />
+                    <a href="{% url 'tourbest:detail' tour.id %}" class="tour-title">{{ tour.title }}</a>
+                    {% if tour.hot %}
+                        <h5 class="tour-hot"> HOT!</h5>
+                    {% endif %}
+                    <h5 class="tour-location">{{ tour.location }}</h5>
+                    <h5 class="tour-price">{{ tour.price }}</h5>
+                    <h5 class="tour-date">{{ tour.start_date }}</h5>
+                    <h5 class="tour-date">{{ tour.finish_date }}</h5>
+                    <h5 class="tour-phone">{{ tour.contact_phone }}</h5>
+{#                    <h5 class="tour-places">{{ tour.available_count }}</h5>    #}
+                {% endfor %}
+            </div>
         {% else %}
             <p >No tours are available.</p>
         {% endif %}
-
    </div>
 {% endblock %}

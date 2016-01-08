@@ -21,6 +21,7 @@ class Style(models.Model):
     title = models.CharField(max_length=40)
 
 class Tour(models.Model):
+    title = models.CharField(max_length=50)
     style = models.ForeignKey(Style)
     price = models.IntegerField()
     location = models.CharField(max_length=50)
@@ -31,6 +32,7 @@ class Tour(models.Model):
     finish_date = models.DateField()
     description = models.CharField(max_length=300)
     picture = models.ImageField(upload_to='profile_images', blank=True)
+    contact_phone = models.CharField(max_length=20)
 
 class Bookings(models.Model):
     user = models.ForeignKey(UserProfile)

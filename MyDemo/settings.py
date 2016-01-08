@@ -128,7 +128,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
   '/static/',
 )
-
+MEDIA_ROOT='/home/PycharmProjects/MyDemo/'
+MEDIA_URL='/media/'
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,

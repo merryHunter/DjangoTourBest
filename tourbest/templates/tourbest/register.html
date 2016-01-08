@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Rango</title>
-    </head>
-
-    <body>
-        <h1>Register with Rango</h1>
-
-        {% if registered %}
-        App says: <strong>thank you for registering!</strong>
-        <a href="/tourbest/">Return to the homepage.</a><br />
-        {% else %}
-        Rango says: <strong>register here!</strong><br />
-
+{% extends 'tourbest/dashboard.html' %}
+{% block page %}
+    <div class="container">
         <form id="user_form" method="post" action="/tourbest/register/"
                 enctype="multipart/form-data">
 
@@ -27,6 +15,5 @@
             <!-- Provide a button to click to submit the form. -->
             <input type="submit" name="submit" value="Register" />
         </form>
-        {% endif %}
-    </body>
-</html>
+    </div>
+{% endblock %}

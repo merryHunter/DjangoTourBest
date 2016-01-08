@@ -1,3 +1,2 @@
-1.Listing tours
-2.Bookings
-3.
+1.Display image  BUG!
+2.Customise register form.
